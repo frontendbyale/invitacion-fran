@@ -31,16 +31,19 @@ const { title } = Astro.props;
 
 <style is:global>
   /* Definición de fuentes */
+
+  @import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
   :root {
     --font-serif: "Playfair Display", serif;
     --font-sans: "Lato", sans-serif;
+    --font-titan: "Titan One", sans-serif;
   }
 
   h1,
   h2,
   h3,
   h4 {
-    font-family: var(--font-serif);
+    font-family: var(--font-titan);
   }
 
   body {

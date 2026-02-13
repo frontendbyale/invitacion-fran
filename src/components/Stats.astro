@@ -1,0 +1,45 @@
+---
+import { Cake } from "lucide-astro";
+---
+
+<section class="py-20 bg-sky-50 text-center px-4 relative">
+  <div class="max-w-2xl mx-auto reveal z-10 relative">
+    <div class="inline-block p-3 rounded-full bg-white shadow-sm mb-6">
+      <Cake class="w-8 h-8 text-cyan-400" />
+    </div>
+    <h2 class="text-3xl md:text-5xl text-slate-800 mb-6 font-serif">
+      "Un año lleno de descubrimientos y sonrisas."
+    </h2>
+    <p class="text-slate-500 leading-relaxed mb-10 text-lg">
+      Parece que fue ayer cuando llegaste a nuestras vidas para llenarlas de
+      alegría. Queremos celebrar este primer año de aventuras bajo el mar con
+      las personas que más queremos.
+    </p>
+
+    <div
+      class="grid grid-cols-4 gap-2 md:gap-4 max-w-lg mx-auto text-slate-600 font-serif"
+    >
+      {
+        ["days", "hours", "minutes", "seconds"].map((unit) => (
+          <div class="flex flex-col p-3 md:p-4 bg-white/60 backdrop-blur-sm rounded-xl shadow-sm border border-white">
+            <span
+              class="text-2xl md:text-4xl font-bold text-cyan-500"
+              id={unit}
+            >
+              00
+            </span>
+            <span class="text-[10px] md:text-xs uppercase mt-1">
+              {unit === "days"
+                ? "Días"
+                : unit === "hours"
+                  ? "Hs"
+                  : unit === "minutes"
+                    ? "Min"
+                    : "Seg"}
+            </span>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

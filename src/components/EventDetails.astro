@@ -1,0 +1,65 @@
+---
+import { Calendar, Clock, MapPin, PartyPopper } from "lucide-astro";
+---
+
+<section class="py-20 bg-white px-4 relative overflow-hidden">
+  <div
+    class="absolute left-0 top-0 w-full h-full bg-[radial-gradient(#e0f2fe_1px,transparent_1px)] bg-size-[20px_20px] opacity-40"
+  >
+  </div>
+
+  <div class="max-w-md mx-auto relative z-10">
+    <div
+      class="bg-white p-8 md:p-12 rounded-4xl shadow-xl border border-sky-100 text-center reveal"
+    >
+      <div class="flex justify-center -mt-20 mb-6">
+        <div
+          class="w-24 h-24 bg-cyan-100 rounded-full flex items-center justify-center shadow-lg border-4 border-white"
+        >
+          <PartyPopper class="w-10 h-10 text-cyan-600" />
+        </div>
+      </div>
+
+      <h3 class="text-3xl font-serif text-slate-800 mb-2">La Fiesta</h3>
+      <p class="text-cyan-500 font-bold uppercase tracking-widest text-sm mb-6">
+        ¡A festejar!
+      </p>
+
+      <div class="space-y-6 text-slate-600">
+        <div class="flex flex-col items-center">
+          <Calendar class="w-6 h-6 text-cyan-400 mb-2" />
+          <span class="font-bold text-lg">Sábado 7 de Marzo</span>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <Clock class="w-6 h-6 text-cyan-400 mb-2" />
+          <span class="font-bold text-lg">13:00 a 16:00 hrs</span>
+        </div>
+
+        <div class="flex flex-col items-center pt-4 border-t border-slate-100">
+          <MapPin class="w-6 h-6 text-cyan-400 mb-2" />
+          <span class="font-medium">Salón "El Angel Multieventos"</span>
+          <span class="text-sm text-slate-400"
+            >Av. Dr. Luis Agote 516, Sourigues</span
+          >
+          <iframe
+            class="rounded-xl justify-center w-full mt-2.5"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.0899927824253!2d-58.2117478!3d-34.803677699999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a329e9976dc1e5%3A0x80a5c49bc0717b2d!2sEl%20%C3%81ngel%20Multieventos!5e0!3m2!1ses-419!2sar!4v1770986271487!5m2!1ses-419!2sar"
+            height="250"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <a
+        href="https://maps.app.goo.gl/KtLNLKYnESp2rTJS6"
+        target="_blank"
+        class="mt-8 inline-block w-full py-3 bg-slate-50 hover:bg-cyan-50 text-cyan-700 rounded-xl transition-colors duration-300 font-bold text-sm"
+      >
+        Ver Ubicación en Mapa
+      </a>
+    </div>
+  </div>
+</section>
