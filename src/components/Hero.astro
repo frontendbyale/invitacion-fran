@@ -5,6 +5,32 @@ import { Anchor, Star, Fish } from "lucide-astro";
 <header
   class="relative h-screen flex flex-col justify-center items-center text-center overflow-hidden bg-[url(/fondo.jpeg)]"
 >
+  <div class="inset-0 pointer-events-none overflow-hidden z-50">
+    <img
+      src="/ballena.png"
+      alt=""
+      class="absolute top-[20%] left-0 w-32 md:w-52 animate-swim-right"
+    />
+
+    <img
+      src="/estrella.png"
+      alt=""
+      class="absolute bottom-[15%] left-[5%] w-24 md:w-32 animate-float-animal"
+    />
+
+    <img
+      src="/estrella.png"
+      alt=""
+      class="absolute top-[15%] right-[5%] w-24 md:w-32 animate-float-animal"
+    />
+
+    <img
+      src="/pulpo.png"
+      alt=""
+      class="absolute top-[75%] left-0 w-32 md:w-44 animate-swim-left"
+    />
+  </div>
+
   <div
     class="absolute top-20 left-10 w-24 h-24 bg-cyan-200 rounded-full mix-blend-multiply filter blur-xl opacity-40 animate-float"
   >
